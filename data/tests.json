@@ -1,0 +1,21 @@
+[
+  {
+    "id": "test_20251128132932",
+    "title": "Bài kiểm tra test_20251128132932",
+    "duration_minutes": 15,
+    "questions": [
+      {
+        "id": "q1",
+        "type": "mcq",
+        "question": "1+2=",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "answer": 2
+      }
+    ]
+  }
+]

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trang quản trị bài kiểm tra</title>
+    <link rel="stylesheet" href="deco/deco.css">
+    <style>
+        body {
+            font-family: "Segoe UI", sans-serif;
+            background: #f5f6fa;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .admin-panel {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .admin-actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            padding: 10px 14px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        #saveBtn {
+            background: #27ae60;
+            color: white;
+        }
+
+        #fetch_logs {
+            background: #2980b9;
+            color: white;
+        }
+
+        #delete_test_btn {
+            background: #e74c3c;
+            color: white;
+        }
+
+        #msg {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .question-block {
+            position: relative;
+            background: #fafafa;
+            border: 1px solid #ddd;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .delete_question_btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            padding: 5px 8px;
+        }
+
+        #questionArea {
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background: #f0f0f0;
+        }
+
+        #logs {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🧠 Bảng Quản Trị Bài Kiểm Tra</h1>
+
+    <div class="admin-panel">
+
+        <div class="admin-actions">
+            <input id="admin_key" type="password" placeholder="🔑 Nhập mật khẩu admin">
+            <button id="saveBtn">💾 Lưu bài kiểm tra</button>
+            <button id="fetch_logs">📊 Xem thống kê</button>
+            <button id="delete_test_btn">🧨 Xóa toàn bộ</button>
+        </div>
+
+        <div id="questionArea"></div>
+
+        <button id="addQBtn">➕ Thêm câu hỏi</button>
+        <div id="msg"></div>
+        <div id="logs"></div>
+
+    </div>
+
+
+    <script src="admin_func.js"></script>
+</body>
+
+</html>

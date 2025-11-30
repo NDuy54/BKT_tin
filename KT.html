@@ -1,0 +1,41 @@
+<!-- KT.html -->
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Kiểm tra</title>
+    <link rel="stylesheet" href="deco/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <h1 id="test_title" class="h1">Bài kiểm tra</h1>
+                <div>
+                    <span class="small">Học sinh: <span id="sid_display">-</span></span><br />
+                    <span class="small">Thời gian còn lại: <span id="timer">--:--</span></span>
+                </div>
+            </div>
+
+            <div id="questions" class="grid"></div>
+
+            <div class="row" style="margin-top:12px">
+                <button id="submit_btn" class="btn">Nộp bài</button>
+                <div class="small" style="align-self:center;display: none;">Lượt rời màn hình: <span id="leave_count"
+                        class="count">0</span></div>
+            </div>
+
+            <div id="notice" style="margin-top:12px" class="small">Trạng thái giám sát: <span id="vis_state">ok</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="KT_func.js"></script>
+</body>
+
+</html>

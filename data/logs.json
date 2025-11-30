@@ -1,0 +1,53 @@
+[
+  {
+    "type": "event",
+    "student_id": "120060",
+    "test_id": "test_20251128132932",
+    "event": "start_test",
+    "timestamp": "2025-11-28T13:29:41.607168Z"
+  },
+  {
+    "type": "submission",
+    "student_id": "120060",
+    "test_id": "test_20251128132932",
+    "answers": {
+      "q1": "2"
+    },
+    "timestamp": "2025-11-28T13:29:47.297792Z"
+  },
+  {
+    "type": "event",
+    "student_id": "120060",
+    "test_id": "test_20251128132932",
+    "event": "blur",
+    "timestamp": "2025-11-28T13:29:47.301542Z"
+  },
+  {
+    "type": "event",
+    "student_id": "120060",
+    "test_id": "test_20251128132932",
+    "event": "focus",
+    "timestamp": "2025-11-28T13:29:47.303325Z"
+  },
+  {
+    "type": "event",
+    "student_id": "120060",
+    "test_id": "test_20251128132932",
+    "event": "blur",
+    "timestamp": "2025-11-28T13:29:48.696814Z"
+  },
+  {
+    "type": "event",
+    "student_id": "120060",
+    "test_id": "test_20251128132932",
+    "event": "focus",
+    "timestamp": "2025-11-28T13:29:48.698505Z"
+  },
+  {
+    "type": "event",
+    "student_id": "120060",
+    "test_id": "test_20251128132932",
+    "event": "visibility_hidden",
+    "timestamp": "2025-11-28T13:29:48.722822Z"
+  }
+]

@@ -1,0 +1,138 @@
+/* deco/style.css */
+:root {
+    --bg: #f5f7fb;
+    --card: #ffffff;
+    --accent: #2b6cb0;
+    --muted: #6b7280;
+    --danger: #e53e3e;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Inter, Roboto, Arial, sans-serif
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(180deg, #eef2ff 0%, var(--bg) 100%);
+    color: #111827;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 24px;
+}
+
+.card {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 18px rgba(14, 30, 37, 0.06);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.h1 {
+    font-size: 20px;
+    margin: 0
+}
+
+.input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #e6e9ef;
+    outline: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 14px;
+    border-radius: 8px;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.btn.ghost {
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid rgba(43, 108, 176, 0.12)
+}
+
+.grid {
+    display: grid;
+    gap: 12px
+}
+
+.row {
+    display: flex;
+    gap: 12px
+}
+
+.small {
+    font-size: 13px;
+    color: var(--muted)
+}
+
+.qbox {
+    border: 1px dashed #e6eefb;
+    padding: 12px;
+    border-radius: 8px;
+    background: #fbfcff
+}
+
+.badge {
+    display: inline-block;
+    padding: 6px 8px;
+    border-radius: 999px;
+    background: #eef2ff;
+    color: var(--accent);
+    font-size: 12px
+}
+
+.alert {
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: #fff4f4;
+    color: var(--danger);
+    border: 1px solid rgba(229, 62, 62, 0.12)
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse
+}
+
+.table th,
+.table td {
+    padding: 8px;
+    border-bottom: 1px solid #f2f4f7;
+    text-align: left
+}
+
+.center {
+    text-align: center
+}
+
+.count {
+    font-weight: 700;
+    color: var(--danger)
+}
+
+.footer {
+    margin-top: 18px;
+    color: var(--muted);
+    font-size: 13px
+}
